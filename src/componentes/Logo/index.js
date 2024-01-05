@@ -1,17 +1,25 @@
-import './estilo.css'
+import styled from 'styled-components'
 import logo from '../../imagens/logo.svg'
 
+const LogoContainer = styled.div`
+  display: flex;
+  font-size: 20px;
+`
+
+const LogoImg = styled.img`
+  margin-right: 10px;
+`
 
 function Logo() {
     return (
-        <div className='logo'>
-          <img 
+        <LogoContainer>
+          <LogoImg
           src={logo} 
           alt='logo' 
-          className='logo-img'>
-          </img>
+          />
+
           <p><strong>Zambello's </strong>Books</p>
-        </div>
+        </LogoContainer>
     )
 }
 
